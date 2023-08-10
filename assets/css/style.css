@@ -525,12 +525,14 @@ section {
 # Achiements
 --------------------------------------------------------------*/
 
-.achievements .bx-medal {
+.achievements .bx-medal,
+.bx-badge-check {
   font-size: 200px;
   color: #1d774e;
 }
 
-.achievements .bx-medal:hover {
+.achievements .bx-medal:hover,
+.bx-badge-check:hover {
   color: #329267;
 }
 
@@ -987,11 +989,11 @@ section {
 }
 
 .contact .info i {
-  font-size: 20px;
+  font-size: 50px;
   color: #329267;
   float: left;
-  width: 44px;
-  height: 44px;
+  width: 88px;
+  height: 88px;
   background: #eef7ff;
   display: flex;
   justify-content: center;
@@ -1016,94 +1018,18 @@ section {
 }
 
 .contact .info .email,
-.contact .info .phone {
+.contact .info .phone,
+.contact .info .whatsApp {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 .contact .info .email:hover i,
-.contact .info .address:hover i,
-.contact .info .phone:hover i {
+.contact .info .phone:hover i,
+.contact .info .whatsApp:hover i {
   background: #329267;
   color: #fff;
-}
-
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
-
-.contact .php-email-form .form-group {
-  padding-bottom: 8px;
-}
-
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .error-message br + br {
-  margin-top: 25px;
-}
-
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 4px;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input {
-  height: 44px;
-}
-
-.contact .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.contact .php-email-form button[type="submit"] {
-  background: #329267;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type="submit"]:hover {
-  background: #0678e3;
 }
 
 @-webkit-keyframes animate-loading {
