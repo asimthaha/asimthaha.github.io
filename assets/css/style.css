@@ -452,6 +452,119 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Experience Timer
+--------------------------------------------------------------*/
+
+.experience-timer .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #016960; /* Matching green title color */
+}
+
+.experience-timer .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #016960;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.experience-timer .section-title p {
+  margin-bottom: 0;
+  color: #45505b;
+}
+
+.timer-box {
+  text-align: center;
+  padding: 30px 20px;
+  background: #fff;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.08);
+  border-color: #016960;
+}
+
+.timer-icon {
+  margin-bottom: 15px;
+}
+
+.timer-icon i {
+  font-size: 36px;
+  color: #016960;
+  transition: all 0.3s ease-in-out;
+}
+
+.timer-box:hover .timer-icon i {
+  color: #011426;
+  transform: scale(1.1);
+}
+
+.timer-value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #011426;
+  margin: 10px 0;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  animation: pulse 0.5s ease-in-out;
+}
+
+.timer-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: #45505b;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timer-value {
+    font-size: 36px;
+  }
+
+  .timer-icon i {
+    font-size: 28px;
+  }
+
+  .timer-box {
+    height: 160px;
+    margin: 5px 0;
+  }
+}
+
+/* Timer animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
 .facts .count-box {
